@@ -1,0 +1,11 @@
+<!-- SVG Placeholder for Work 1 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#F8F2F0"/>
+  <ellipse cx="150" cy="125" rx="60" ry="40" fill="#C9A66B" opacity="0.3"/>
+  <rect x="90" y="105" width="120" height="40" rx="20" fill="#EADFCB"/>
+  <text x="150" y="130" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#6B6B6B">Classic Design</text>
+  <circle cx="80" cy="80" r="8" fill="#E5D5A8" opacity="0.7"/>
+  <circle cx="220" cy="80" r="6" fill="#E5D5A8" opacity="0.5"/>
+  <circle cx="100" cy="180" r="7" fill="#E5D5A8" opacity="0.6"/>
+  <circle cx="200" cy="170" r="9" fill="#E5D5A8" opacity="0.8"/>
+</svg>

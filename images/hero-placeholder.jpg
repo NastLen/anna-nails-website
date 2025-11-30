@@ -1,0 +1,8 @@
+<!-- SVG Placeholder for Hero Image -->
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#F3E7E0"/>
+  <circle cx="250" cy="200" r="80" fill="#C9A66B" opacity="0.3"/>
+  <rect x="150" y="300" width="200" height="80" rx="40" fill="#EADFCB"/>
+  <text x="250" y="350" font-family="Inter, sans-serif" font-size="16" text-anchor="middle" fill="#6B6B6B">Beautiful Nails</text>
+  <path d="M100,450 Q250,400 400,450" stroke="#C9A66B" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna - Nail Art Master | Мастер маникюра</title>
+    <meta
+      name="description"
+      content="Профессиональный маникюр и nail art от мастера Анны. Качественные услуги, стильный дизайн, индивидуальный подход."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/logo-placeholder.svg"
+            alt="Anna Nails"
+            class="logo-img"
+          />
+          <span class="logo-text" data-key="logo">Anna</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" data-key="nav-home">Главная</a></li>
+          <li><a href="#about" data-key="nav-about">О мастере</a></li>
+          <li><a href="#gallery" data-key="nav-gallery">Работы</a></li>
+          <li><a href="#services" data-key="nav-services">Услуги</a></li>
+          <li><a href="#booking" data-key="nav-booking">Запись</a></li>
+          <li><a href="#contact" data-key="nav-contact">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Decorative Elements -->
+    <div class="decorative-element left-element"></div>
+    <div class="decorative-element right-element"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title" data-key="hero-title">
+            Искусство маникюра от Анны
+          </h1>
+          <div class="golden-line"></div>
+          <p class="hero-subtitle" data-key="hero-subtitle">
+            Создаю красоту ваших ногтей с любовью и профессионализмом
+          </p>
+          <a href="#booking" class="btn btn-primary" data-key="hero-btn"
+            >Записаться на процедуру</a
+          >
+        </div>
+        <div class="hero-image">
+          <img
+            src="images/hero-placeholder.jpg"
+            alt="Anna's work"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="images/anna-placeholder.jpg"
+              alt="Anna"
+              class="about-img"
+            />
+          </div>
+          <div class="about-text">
+            <h2 class="section-title" data-key="about-title">О мастере</h2>
+            <div class="golden-line"></div>
+            <p data-key="about-description">
+              Привет! Меня зовут Анна, и я создаю красоту ваших ногтей уже более
+              5 лет. Каждая процедура для меня — это возможность подчеркнуть
+              вашу индивидуальность и создать что-то особенное.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-award"></i>
+                <span data-key="feature-1">Сертифицированный мастер</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-heart"></i>
+                <span data-key="feature-2">Индивидуальный подход</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-star"></i>
+                <span data-key="feature-3">Качественные материалы</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title" data-key="gallery-title">Мои работы</h2>
+        <div class="golden-line"></div>
+
+        <div class="gallery-filters">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-key="filter-all"
+          >
+            Все работы
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="classic"
+            data-key="filter-classic"
+          >
+            Классический
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="design"
+            data-key="filter-design"
+          >
+            Дизайн
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="extension"
+            data-key="filter-extension"
+          >
+            Наращивание
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery items will be generated dynamically -->
+          <div class="gallery-item" data-category="classic">
+            <img src="images/work-placeholder-1.jpg" alt="Classic manicure" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-1">Классический маникюр</h3>
+              <p data-key="work-1-desc">
+                Французский маникюр с нежным дизайном
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-2.jpg" alt="Nail design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-2">Авторский дизайн</h3>
+              <p data-key="work-2-desc">
+                Уникальный дизайн с золотыми элементами
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="extension">
+            <img src="images/work-placeholder-3.jpg" alt="Nail extension" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-3">Наращивание</h3>
+              <p data-key="work-3-desc">
+                Наращивание гелем с естественным покрытием
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-4.jpg" alt="Artistic design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-4">Художественный дизайн</h3>
+              <p data-key="work-4-desc">
+                Роспись вручную с акварельным эффектом
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="classic">
+            <img src="images/work-placeholder-5.jpg" alt="Nude manicure" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-5">Нюдовое покрытие</h3>
+              <p data-key="work-5-desc">
+                Естественный маникюр для повседневного образа
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-6.jpg" alt="Seasonal design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-6">Сезонный дизайн</h3>
+              <p data-key="work-6-desc">Тематический дизайн к празднику</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title" data-key="services-title">Услуги и цены</h2>
+        <div class="golden-line"></div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <h3 data-key="service-manicure">Классический маникюр</h3>
+            <p data-key="service-manicure-desc">
+              Обработка кутикулы, придание формы, покрытие лаком
+            </p>
+            <div class="service-price">
+              <span class="price">€35</span>
+              <span class="duration" data-key="duration-60">60 мин</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 data-key="service-gel">Гель-лак</h3>
+            <p data-key="service-gel-desc">
+              Стойкое покрытие гель-лаком с глянцевым финишем
+            </p>
+            <div class="service-price">
+              <span class="price">€45</span>
+              <span class="duration" data-key="duration-90">90 мин</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 data-key="service-design">Дизайн ногтей</h3>
+            <p data-key="service-design-desc">
+              Художественный дизайн, роспись, декор стразами
+            </p>
+            <div class="service-price">
+              <span class="price">€55+</span>
+              <span class="duration" data-key="duration-120">120 мин</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 data-key="service-extension">Наращивание</h3>
+            <p data-key="service-extension-desc">
+              Наращивание ногтей гелем или акрилом
+            </p>
+            <div class="service-price">
+              <span class="price">€65</span>
+              <span class="duration" data-key="duration-150">150 мин</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3 data-key="service-spa">SPA-маникюр</h3>
+            <p data-key="service-spa-desc">
+              Увлажняющие процедуры, массаж рук, уход за кожей
+            </p>
+            <div class="service-price">
+              <span class="price">€50</span>
+              <span class="duration" data-key="duration-75">75 мин</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 data-key="service-correction">Коррекция</h3>
+            <p data-key="service-correction-desc">
+              Коррекция наращенных ногтей
+            </p>
+            <div class="service-price">
+              <span class="price">€40</span>
+              <span class="duration" data-key="duration-90">90 мин</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <div class="container">
+        <h2 class="section-title" data-key="booking-title">
+          Запись на процедуру
+        </h2>
+        <div class="golden-line"></div>
+
+        <div class="booking-content">
+          <div class="booking-info">
+            <h3 data-key="booking-info-title">Как записаться</h3>
+            <div class="booking-options">
+              <div class="booking-option">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <p data-key="whatsapp-desc">
+                    Быстрая запись через мессенджер
+                  </p>
+                  <a href="https://wa.me/4915123456789" class="contact-link"
+                    >+49 151 23456789</a
+                  >
+                </div>
+              </div>
+              <div class="booking-option">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4 data-key="phone-title">Телефон</h4>
+                  <p data-key="phone-desc">Звоните с 9:00 до 19:00</p>
+                  <a href="tel:+4915123456789" class="contact-link"
+                    >+49 151 23456789</a
+                  >
+                </div>
+              </div>
+              <div class="booking-option">
+                <i class="fab fa-instagram"></i>
+                <div>
+                  <h4>Instagram</h4>
+                  <p data-key="instagram-desc">Пишите в Direct Messages</p>
+                  <a
+                    href="https://instagram.com/anna_nails"
+                    class="contact-link"
+                    >@anna_nails</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <h3 data-key="form-title">Или оставьте заявку</h3>
+            <p data-key="form-subtitle">Я свяжусь с вами в течение 2 часов</p>
+
+            <div class="form-group">
+              <label for="name" data-key="form-name">Имя *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" data-key="form-phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="service" data-key="form-service">Услуга</label>
+              <select id="service" name="service">
+                <option value="" data-key="form-service-select">
+                  Выберите услугу
+                </option>
+                <option value="classic" data-key="form-service-classic">
+                  Классический маникюр
+                </option>
+                <option value="gel" data-key="form-service-gel">
+                  Гель-лак
+                </option>
+                <option value="design" data-key="form-service-design">
+                  Дизайн ногтей
+                </option>
+                <option value="extension" data-key="form-service-extension">
+                  Наращивание
+                </option>
+                <option value="spa" data-key="form-service-spa">
+                  SPA-маникюр
+                </option>
+                <option value="correction" data-key="form-service-correction">
+                  Коррекция
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date" data-key="form-date">Предпочитаемая дата</label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-key="form-message">Комментарий</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Расскажите о желаемом дизайне или задайте вопросы"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-key="form-submit"
+            >
+              Отправить заявку
+            </button>
+
+            <p class="form-note" data-key="form-note">
+              Отправляя заявку, вы соглашаетесь на обработку персональных данных
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-key="contact-title">Контакты</h2>
+        <div class="golden-line"></div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3 data-key="contact-address-title">Адрес</h3>
+                <p data-key="contact-address">
+                  Musterstraße 123<br />10115 Berlin, Deutschland
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3 data-key="contact-hours-title">Часы работы</h3>
+                <p data-key="contact-hours">
+                  Пн-Пт: 9:00 - 19:00<br />
+                  Сб: 10:00 - 17:00<br />
+                  Вс: Выходной
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3 data-key="contact-phone-title">Телефон</h3>
+                <a href="tel:+4915123456789" class="contact-link"
+                  >+49 151 23456789</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <h3>Instagram</h3>
+                <a href="https://instagram.com/anna_nails" class="contact-link"
+                  >@anna_nails</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <!-- Placeholder for map - replace with actual Google Maps embed -->
+            <div class="map-placeholder">
+              <i class="fas fa-map"></i>
+              <p data-key="map-placeholder">Карта будет добавлена</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-placeholder.svg"
+              alt="Anna Nails"
+              class="logo-img"
+            />
+            <span class="logo-text">Anna</span>
+          </div>
+          <p data-key="footer-text">© 2025 Anna. Все права защищены.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/anna_nails" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/4915123456789" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
