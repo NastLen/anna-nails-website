@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Language Switcher */
 .language-switcher {
     position: fixed;
-    top: 20px;
+    top: 80px;
     right: 20px;
     z-index: 1001;
     display: flex;
