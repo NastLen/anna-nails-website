@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги и цены - Anna Nail Art Master</title>
+    <meta
+      name="description"
+      content="Полный прайс-лист услуг мастера маникюра Анны: классический маникюр, гель-лак, дизайн ногтей, наращивание, SPA-процедуры."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/logo-placeholder.svg"
+            alt="Anna Nails"
+            class="logo-img"
+          />
+          <span class="logo-text" data-key="logo">Anna</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" data-key="nav-home">Главная</a></li>
+          <li><a href="about.html" data-key="nav-about">О мастере</a></li>
+          <li><a href="gallery.html" data-key="nav-gallery">Работы</a></li>
+          <li>
+            <a href="services.html" class="active" data-key="nav-services"
+              >Услуги</a
+            >
+          </li>
+          <li><a href="booking.html" data-key="nav-booking">Запись</a></li>
+          <li><a href="contact.html" data-key="nav-contact">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Decorative Elements -->
+    <div class="decorative-element left-element"></div>
+    <div class="decorative-element right-element"></div>
+
+    <!-- Services Section -->
+    <section class="services" style="padding-top: 120px">
+      <div class="container">
+        <h1 class="section-title" data-key="services-title">Услуги и цены</h1>
+        <div class="golden-line"></div>
+        <p class="services-intro" data-key="services-intro">
+          Предлагаю полный спектр услуг по уходу за ногтями. Все процедуры
+          выполняются с использованием качественных материалов в комфортной
+          атмосфере.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <h3 data-key="service-manicure">Классический маникюр</h3>
+            <p data-key="service-manicure-desc">
+              Обработка кутикулы, придание формы, покрытие лаком
+            </p>
+            <div class="service-price">
+              <span class="price">€35</span>
+              <span class="duration" data-key="duration-60">60 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-cuticle">Обработка кутикулы</li>
+                <li data-key="includes-shape">Придание формы ногтям</li>
+                <li data-key="includes-polish">Покрытие лаком</li>
+                <li data-key="includes-massage">Массаж рук</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 data-key="service-gel">Гель-лак</h3>
+            <p data-key="service-gel-desc">
+              Стойкое покрытие гель-лаком с глянцевым финишем
+            </p>
+            <div class="service-price">
+              <span class="price">€45</span>
+              <span class="duration" data-key="duration-90">90 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-prep">Подготовка ногтей</li>
+                <li data-key="includes-gel">Покрытие гель-лаком</li>
+                <li data-key="includes-top">Топовое покрытие</li>
+                <li data-key="includes-uv">Сушка под УФ-лампой</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 data-key="service-design">Дизайн ногтей</h3>
+            <p data-key="service-design-desc">
+              Художественный дизайн, роспись, декор стразами
+            </p>
+            <div class="service-price">
+              <span class="price">€55+</span>
+              <span class="duration" data-key="duration-120">120 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-artistic">Художественная роспись</li>
+                <li data-key="includes-rhinestones">Декор стразами</li>
+                <li data-key="includes-foil">Фольга и блёстки</li>
+                <li data-key="includes-custom">Индивидуальный дизайн</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 data-key="service-extension">Наращивание</h3>
+            <p data-key="service-extension-desc">
+              Наращивание ногтей гелем или акрилом
+            </p>
+            <div class="service-price">
+              <span class="price">€65</span>
+              <span class="duration" data-key="duration-150">150 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-extension">Наращивание гелем/акрилом</li>
+                <li data-key="includes-form">Моделирование формы</li>
+                <li data-key="includes-filing">Опил и шлифовка</li>
+                <li data-key="includes-finish">Финишное покрытие</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3 data-key="service-spa">SPA-маникюр</h3>
+            <p data-key="service-spa-desc">
+              Увлажняющие процедуры, массаж рук, уход за кожей
+            </p>
+            <div class="service-price">
+              <span class="price">€50</span>
+              <span class="duration" data-key="duration-75">75 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-scrub">Пилинг рук</li>
+                <li data-key="includes-mask">Увлажняющая маска</li>
+                <li data-key="includes-spa-massage">Расслабляющий массаж</li>
+                <li data-key="includes-cream">Питательный крем</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 data-key="service-correction">Коррекция</h3>
+            <p data-key="service-correction-desc">
+              Коррекция наращенных ногтей
+            </p>
+            <div class="service-price">
+              <span class="price">€40</span>
+              <span class="duration" data-key="duration-90">90 мин</span>
+            </div>
+            <div class="service-includes">
+              <h4 data-key="includes-title">Включает:</h4>
+              <ul>
+                <li data-key="includes-remove">Снятие старого покрытия</li>
+                <li data-key="includes-refill">Коррекция формы</li>
+                <li data-key="includes-new-polish">Новое покрытие</li>
+                <li data-key="includes-care">Уход за кутикулой</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-note">
+          <h3 data-key="services-note-title">Важная информация</h3>
+          <ul>
+            <li data-key="note-quality">
+              Использую только качественные материалы проверенных брендов
+            </li>
+            <li data-key="note-hygiene">
+              Строгое соблюдение санитарных норм и стерилизация инструментов
+            </li>
+            <li data-key="note-time">
+              Время процедуры может варьироваться в зависимости от сложности
+              работы
+            </li>
+            <li data-key="note-consultation">
+              Бесплатная консультация по выбору дизайна и услуги
+            </li>
+          </ul>
+        </div>
+
+        <div class="services-cta">
+          <h3 data-key="services-cta-title">Готовы записаться?</h3>
+          <p data-key="services-cta-text">
+            Выберите подходящую услугу и запишитесь на удобное время
+          </p>
+          <a
+            href="booking.html"
+            class="btn btn-primary"
+            data-key="services-cta-btn"
+            >Записаться на процедуру</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-placeholder.svg"
+              alt="Anna Nails"
+              class="logo-img"
+            />
+            <span class="logo-text">Anna</span>
+          </div>
+          <p data-key="footer-text">© 2025 Anna. Все права защищены.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/anna_nails" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/4915123456789" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

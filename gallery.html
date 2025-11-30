@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея работ - Anna Nail Art Master</title>
+    <meta
+      name="description"
+      content="Посмотрите примеры работ мастера маникюра Анны - классический маникюр, художественный дизайн, наращивание ногтей."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/logo-placeholder.svg"
+            alt="Anna Nails"
+            class="logo-img"
+          />
+          <span class="logo-text" data-key="logo">Anna</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" data-key="nav-home">Главная</a></li>
+          <li><a href="about.html" data-key="nav-about">О мастере</a></li>
+          <li>
+            <a href="gallery.html" class="active" data-key="nav-gallery"
+              >Работы</a
+            >
+          </li>
+          <li><a href="services.html" data-key="nav-services">Услуги</a></li>
+          <li><a href="booking.html" data-key="nav-booking">Запись</a></li>
+          <li><a href="contact.html" data-key="nav-contact">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Decorative Elements -->
+    <div class="decorative-element left-element"></div>
+    <div class="decorative-element right-element"></div>
+
+    <!-- Gallery Section -->
+    <section class="gallery" style="padding-top: 120px">
+      <div class="container">
+        <h1 class="section-title" data-key="gallery-title">Мои работы</h1>
+        <div class="golden-line"></div>
+        <p class="gallery-intro" data-key="gallery-intro">
+          Здесь вы можете увидеть примеры моих работ в различных техниках и
+          стилях. Каждая работа выполнена с особой заботой и вниманием к
+          деталям.
+        </p>
+
+        <div class="gallery-filters">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-key="filter-all"
+          >
+            Все работы
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="classic"
+            data-key="filter-classic"
+          >
+            Классический
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="design"
+            data-key="filter-design"
+          >
+            Дизайн
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="extension"
+            data-key="filter-extension"
+          >
+            Наращивание
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="classic">
+            <img src="images/work-placeholder-1.jpg" alt="Classic manicure" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-1">Классический маникюр</h3>
+              <p data-key="work-1-desc">
+                Французский маникюр с нежным дизайном
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-2.jpg" alt="Nail design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-2">Авторский дизайн</h3>
+              <p data-key="work-2-desc">
+                Уникальный дизайн с золотыми элементами
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="extension">
+            <img src="images/work-placeholder-3.jpg" alt="Nail extension" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-3">Наращивание</h3>
+              <p data-key="work-3-desc">
+                Наращивание гелем с естественным покрытием
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-4.jpg" alt="Artistic design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-4">Художественный дизайн</h3>
+              <p data-key="work-4-desc">
+                Роспись вручную с акварельным эффектом
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="classic">
+            <img src="images/work-placeholder-5.jpg" alt="Nude manicure" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-5">Нюдовое покрытие</h3>
+              <p data-key="work-5-desc">
+                Естественный маникюр для повседневного образа
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="design">
+            <img src="images/work-placeholder-6.jpg" alt="Seasonal design" />
+            <div class="gallery-overlay">
+              <h3 data-key="work-6">Сезонный дизайн</h3>
+              <p data-key="work-6-desc">Тематический дизайн к празднику</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cta">
+          <h3 data-key="gallery-cta-title">Понравилась какая-то работа?</h3>
+          <p data-key="gallery-cta-text">
+            Запишитесь на процедуру, и мы создадим похожий дизайн специально для
+            вас
+          </p>
+          <a
+            href="booking.html"
+            class="btn btn-primary"
+            data-key="gallery-cta-btn"
+            >Записаться на процедуру</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-placeholder.svg"
+              alt="Anna Nails"
+              class="logo-img"
+            />
+            <span class="logo-text">Anna</span>
+          </div>
+          <p data-key="footer-text">© 2025 Anna. Все права защищены.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/anna_nails" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/4915123456789" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Запись на процедуры - Anna Nail Art Master</title>
+    <meta
+      name="description"
+      content="Запишитесь к мастеру маникюра Анне онлайн. Удобное время записи, подтверждение по WhatsApp. Профессиональный маникюр в Берлине."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/logo-placeholder.svg"
+            alt="Anna Nails"
+            class="logo-img"
+          />
+          <span class="logo-text" data-key="logo">Anna</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" data-key="nav-home">Главная</a></li>
+          <li><a href="about.html" data-key="nav-about">О мастере</a></li>
+          <li><a href="gallery.html" data-key="nav-gallery">Работы</a></li>
+          <li><a href="services.html" data-key="nav-services">Услуги</a></li>
+          <li>
+            <a href="booking.html" class="active" data-key="nav-booking"
+              >Запись</a
+            >
+          </li>
+          <li><a href="contact.html" data-key="nav-contact">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Decorative Elements -->
+    <div class="decorative-element left-element"></div>
+    <div class="decorative-element right-element"></div>
+
+    <!-- Booking Section -->
+    <section class="booking-section" style="padding-top: 120px">
+      <div class="container">
+        <h1 class="section-title" data-key="booking-title">
+          Запись на процедуры
+        </h1>
+        <div class="golden-line"></div>
+        <p class="booking-intro" data-key="booking-intro">
+          Выберите удобное время для посещения. Заявка будет подтверждена в
+          течение нескольких часов.
+        </p>
+
+        <div class="booking-container">
+          <div class="booking-form-section">
+            <h2 data-key="booking-form-title">Форма записи</h2>
+            <form class="booking-form" id="bookingForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" data-key="form-name">Имя *</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone" data-key="form-phone">Телефон *</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" data-key="form-email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-group">
+                  <label for="service" data-key="form-service">Услуга *</label>
+                  <select id="service" name="service" required>
+                    <option value="" data-key="form-select-service">
+                      Выберите услугу
+                    </option>
+                    <option
+                      value="classic-manicure"
+                      data-key="service-manicure"
+                    >
+                      Классический маникюр
+                    </option>
+                    <option value="gel-polish" data-key="service-gel">
+                      Гель-лак
+                    </option>
+                    <option value="nail-design" data-key="service-design">
+                      Дизайн ногтей
+                    </option>
+                    <option value="nail-extension" data-key="service-extension">
+                      Наращивание
+                    </option>
+                    <option value="spa-manicure" data-key="service-spa">
+                      SPA-маникюр
+                    </option>
+                    <option value="correction" data-key="service-correction">
+                      Коррекция
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date" data-key="form-date">Желаемая дата *</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="time" data-key="form-time"
+                    >Желаемое время *</label
+                  >
+                  <select id="time" name="time" required>
+                    <option value="" data-key="form-select-time">
+                      Выберите время
+                    </option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-key="form-message"
+                  >Дополнительные пожелания</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Опишите желаемый дизайн, особые требования или вопросы"
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <span class="checkmark"></span>
+                  <span data-key="form-consent"
+                    >Согласен на обработку персональных данных *</span
+                  >
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-key="form-submit"
+              >
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+
+          <div class="booking-info-section">
+            <h2 data-key="booking-info-title">Информация о записи</h2>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 data-key="working-hours-title">Часы работы</h3>
+              <ul>
+                <li data-key="working-mon-fri">Пн-Пт: 9:00 - 19:00</li>
+                <li data-key="working-sat">Сб: 10:00 - 18:00</li>
+                <li data-key="working-sun">Вс: Выходной</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h3 data-key="booking-process-title">Процесс записи</h3>
+              <ul>
+                <li data-key="booking-step1">1. Заполните форму записи</li>
+                <li data-key="booking-step2">2. Получите подтверждение</li>
+                <li data-key="booking-step3">
+                  3. Приходите в назначенное время
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 data-key="booking-benefits-title">Преимущества</h3>
+              <ul>
+                <li data-key="benefit1">Индивидуальный подход</li>
+                <li data-key="benefit2">Качественные материалы</li>
+                <li data-key="benefit3">Комфортная атмосфера</li>
+                <li data-key="benefit4">Профессиональный опыт</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <h3 data-key="important-info-title">Важно знать</h3>
+              <ul>
+                <li data-key="important1">
+                  Опоздание более 15 минут = перенос записи
+                </li>
+                <li data-key="important2">
+                  Отмена менее чем за 24 часа не рекомендуется
+                </li>
+                <li data-key="important3">
+                  При аллергии обязательно сообщите заранее
+                </li>
+                <li data-key="important4">Приносите с собой тапочки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-contact">
+          <h2 data-key="quick-contact-title">Быстрая связь</h2>
+          <p data-key="quick-contact-text">
+            Предпочитаете записаться по телефону или есть срочные вопросы?
+          </p>
+
+          <div class="contact-options">
+            <a
+              href="https://wa.me/4915123456789"
+              class="contact-btn whatsapp"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              <span>
+                <strong>WhatsApp</strong>
+                <small data-key="whatsapp-text">Быстрый ответ</small>
+              </span>
+            </a>
+
+            <a href="tel:+4915123456789" class="contact-btn phone">
+              <i class="fas fa-phone"></i>
+              <span>
+                <strong>+49 151 234 567 89</strong>
+                <small data-key="phone-text">Звонок</small>
+              </span>
+            </a>
+
+            <a
+              href="https://instagram.com/anna_nails"
+              class="contact-btn instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>
+                <strong>Instagram</strong>
+                <small data-key="instagram-text">@anna_nails</small>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-placeholder.svg"
+              alt="Anna Nails"
+              class="logo-img"
+            />
+            <span class="logo-text">Anna</span>
+          </div>
+          <p data-key="footer-text">© 2025 Anna. Все права защищены.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/anna_nails" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/4915123456789" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
