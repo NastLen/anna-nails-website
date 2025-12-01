@@ -2,7 +2,7 @@
 const translations = {
     ru: {
         // Navigation
-        'logo': 'Anna',
+        'logo': 'LIKA Nail Concept',
         'nav-home': 'Главная',
         'nav-about': 'О мастере',
         'nav-gallery': 'Работы',
@@ -242,7 +242,7 @@ const translations = {
     
     en: {
         // Navigation
-        'logo': 'Anna',
+        'logo': 'LIKA Nail Concept',
         'nav-home': 'Home',
         'nav-about': 'About',
         'nav-gallery': 'Gallery',
@@ -482,7 +482,7 @@ const translations = {
     
     de: {
         // Navigation
-        'logo': 'Anna',
+        'logo': 'LIKA Nail Concept',
         'nav-home': 'Startseite',
         'nav-about': 'Über mich',
         'nav-gallery': 'Galerie',
